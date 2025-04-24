@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>
+        <button onclick="
+        calculation+='1';
+        ">1</button>
+        <button onclick="
+        calculation+='2';
+    ">2</button>
+        <button onclick="
+        calculation+='3';
+    ">3</button>
+    </p>
+
+    <p>
+        <button onclick="
+        calculation+='4';
+    ">4</button>
+        <button onclick="
+        calculation+='5';
+    ">5</button>
+
+    </p>
+
+
+
+
+
+    <button onclick="
+        calculation+=' + ';
+    ">+</button>
+    <button onclick="
+
+        console.log(calculation);
+        calculation=eval(calculation);
+        console.log(calculation);
+    ">=</button>
+
+
+</body>
+<script>
+    let calculation = '';
+
+</script>
+
+</html>
