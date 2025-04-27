@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="
+         const randomNumber=Math.random();
+         const result = randomNumber <0.5 ? 'heads' : 'tails';
+            console.log(randomNumber);
+            
+         if(result === 'heads'){
+            alert('You won!')
+         }
+         else{
+            alert('You lost!')
+         }
+        ">Heads</button>
+    <button onclick="
+    
+        randomNumber=Math.random();
+        result = randomNumber <0.5 ? 'heads' : 'tails';
+        console.log(randomNumber);
+            
+        if(result === 'tails'){
+            alert('You won!')
+        }
+        else{
+            alert('You lost!')
+        }
+
+
+    ">Tails</button>
+</body>
+<script>
+    // const hour = 6;
+    // const hour = 14;
+    const hour = 23
+    const name = 'AJAY A';
+    if (hour >= 6 && hour <= 12) {
+        console.log(`Good morning! ${name}`);
+    } else if (hour >= 13 && hour <= 17) {
+        console.log(`Good afternoon! ${name}`);
+    } else {
+        console.log(`Good night! ${name}`);
+    }
+
+    const age = 3;
+    const holiday = true;
+    if (holiday && (age <= 5 || age >= 65)) {
+        console.log('Discount!');
+    } else {
+        console.log('No Discount!');
+
+    }
+
+    
+
+
+
+
+
+
+</script>
+
+</html>
