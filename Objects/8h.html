@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>
+        <button onclick="
+        updateCalculation('1')
+        ">1</button>
+        <button onclick="
+       updateCalculation('2')
+    ">2</button>
+        <button onclick="
+        updateCalculation('3')
+    ">3</button>
+    </p>
+
+    <p>
+        <button onclick="
+        updateCalculation('4')
+    ">4</button>
+        <button onclick="
+       updateCalculation('5')
+    ">5</button>
+
+    </p>
+
+
+
+
+
+    <button onclick="
+        calculation+=' + ';
+    ">+</button>
+    <button onclick="
+
+        console.log(calculation);
+        calculation=eval(calculation);
+        console.log(calculation);
+        localStorage.setItem('calculation',calculation)
+    ">=</button>
+
+
+</body>
+<script>
+    console.log("Hello");
+
+    let calculation = localStorage.getItem('calculation') || '0';
+
+    console.log(calculation);
+
+
+    function updateCalculation(number) {
+        calculation += number;
+    }
+
+</script>
+
+</html>
