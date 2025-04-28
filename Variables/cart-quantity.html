@@ -13,29 +13,32 @@
     console.log(`Cart quantity : ${cartQuantity}`);
     ">Show quantity</button>
     <button onclick="
-    cartQuantity = cartQuantity+1;
-    console.log(`Cart quantity : ${cartQuantity}`);
+    
+    updateCartquantity(1,true);
+    
     
     
     ">Add to cart</button>
     <button onclick="
-    cartQuantity = cartQuantity + 2;
-    console.log(`Cart quantity : ${cartQuantity}`);
+     updateCartquantity(2,true);
 
     ">+2</button>
     <button onclick="
-    cartQuantity = cartQuantity + 3;
-    console.log(`Cart quantity : ${cartQuantity}`)">+3</button>
+
+     updateCartquantity(3,true);
+    
+    ">+3</button>
     <button onclick="
-    cartQuantity += 4;
-    console.log(`Cart quantity : ${cartQuantity}`)">+4</button>
+     updateCartquantity(4,true);
+    ">+4</button>
     <button onclick="
-    cartQuantity += 5;
-    console.log(`Cart quantity : ${cartQuantity}`)">+5</button>
+         updateCartquantity(5,true);
+
+    
+    ">+5</button>
 
     <button onclick="
-     cartQuantity--;
-     console.log(`Cart quantity : ${cartQuantity}`)
+     updateCartquantity(1,false);
         
     ">
         Remove from cart
@@ -49,17 +52,40 @@
 
 
     <button onclick="
-cartQuantity -= 2;
-console.log(`Cart quantity : ${cartQuantity}`);
+    updateCartquantity(2,false);
 
-">-2</button>
+    ">-2</button>
     <button onclick="
-cartQuantity -= 3;
-console.log(`Cart quantity : ${cartQuantity}`)">-3</button>
+    updateCartquantity(3,false);
+
+    ">-3</button>
 
 </body>
 <script>
     let cartQuantity = 0;
+    function updateCartquantity(number, bool) {
+
+        if (bool) {
+            if (cartQuantity + number > 10) {
+
+                alert('Cart is full!');
+            } else {
+                cartQuantity += number;
+            }
+            console.log(`Cart quantity : ${cartQuantity}`);
+
+        }
+        else {
+            if (cartQuantity - number < 0) {
+                alert('Cart does not enough orders to delete.')
+            } else {
+                cartQuantity -= number;
+            }
+            console.log(`Cart quantity : ${cartQuantity}`);
+
+        }
+
+    }
 </script>
 
 </html>

@@ -10,22 +10,22 @@
 <body>
     <p>
         <button onclick="
-        calculation+='1';
+        updateCalculation('1')
         ">1</button>
         <button onclick="
-        calculation+='2';
+       updateCalculation('2')
     ">2</button>
         <button onclick="
-        calculation+='3';
+        updateCalculation('3')
     ">3</button>
     </p>
 
     <p>
         <button onclick="
-        calculation+='4';
+        updateCalculation('4')
     ">4</button>
         <button onclick="
-        calculation+='5';
+       updateCalculation('5')
     ">5</button>
 
     </p>
@@ -48,6 +48,9 @@
 </body>
 <script>
     let calculation = '';
+    function updateCalculation(number) {
+        calculation += number;
+    }
 
 </script>
 
