@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" class="js-input">
+    <button onclick="
+    
+    calculate();
+    
+    ">Calculate</button>
+
+    <p>Run time display.</p>
+    <input type="text" class="js-run-time" onkeydown="    
+
+        displayText(event)
+        
+    ">
+    <p class="run-time"></p>
+
+
+</body>
+<script>
+    let result=''
+    function displayText(event) {
+       
+        console.log(event.target.value);
+        
+
+    }
+    function calculate() {
+        let cost = Number(document.querySelector(".js-input").value);
+        console.log(cost);
+        cost = cost * 100;
+        cost = cost + 1000
+        cost = cost / 100;
+        console.log(cost);
+
+    }
+
+</script>
+
+</html>

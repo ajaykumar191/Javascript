@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Excercise.</title>
+</head>
+
+<body>
+    <button class="js-9a" onclick="
+        changeText();
+    ">9a</button>
+
+    <p></p>
+    <button onclick="
+    
+    displayText('Heads');
+    
+    ">Heads</button>
+    <button onclick="
+    
+    displayText('Tails');
+
+    ">Tails</button>
+    <p class="js-result"></p>
+
+    <input class="js-name-input" type="text" placeholder="Enter your name" onkeydown="
+    enterDisplayName(event)
+    
+    " >
+    <button class="js-submit" onclick="
+    displayName()
+    ">Submit</button>
+</body>
+<script>
+
+    function enterDisplayName(event){
+        if(event.key === "Enter"){
+            displayName()
+        }
+    }
+
+    function displayName(){
+        const name =(document.querySelector(".js-name-input").value);
+        console.log(`Your name is ${name}`);
+    }
+
+    function displayText(text){
+        document.querySelector(".js-result").innerHTML=`You choose ${text}`;
+    }
+
+
+    function changeText(){
+        const buttonElement = document.querySelector(".js-9a");
+        buttonElement.innerHTML="9b";
+    }
+
+    
+
+
+</script>
+
+</html>
