@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10a</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .cart{
+            padding: 10px 40px;
+            background-color: rgb(255, 216, 20);
+            border: none;
+            border-radius: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .uber{
+            border: none;
+            font-size: 15px;
+            padding: 10px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .request{
+            background-color: black;
+            color: white;
+            margin-right: 20px;
+        }
+        .schedule{
+            background-color: rgb(230, 230, 230);
+            color: black;
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+    <button class="cart"> Add to Cart</button>
+    <p></p>
+    <button class="request uber" >Request now</button>
+    <button class="schedule uber">Schedule for later</button>
+
+    <p></p>
+
+    <button class="js-button test test-button">Test</button>
+    
+</body>
+<script>
+    console.log( document.querySelector(".js-button").classList.contains("test"))
+</script>
+</html>
