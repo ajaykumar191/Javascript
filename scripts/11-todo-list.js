@@ -1,5 +1,4 @@
 let todoList = [];
-//C:\Users\ajay3\OneDrive\Desktop\JavaScript\scripts\11-todo-list.js
 renderTodolist();
 function renderTodolist() {
     let todoListHTML = '';
@@ -18,7 +17,9 @@ function renderTodolist() {
     document.querySelector(".js-todo-list").innerHTML = todoListHTML;
 }
 
-
+document.querySelector(".js-add-todo-button").addEventListener("click",()=>{
+    
+})
 
 function addTodo() {
     const inputElement = document.querySelector(".js-name-input");
