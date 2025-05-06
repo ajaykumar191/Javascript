@@ -1,5 +1,5 @@
 import { cart } from "../../data/cart.js";
-import {  products } from "../../data/products.js";
+import { products } from "../../data/products.js";
 import { formatCurrency } from "../utils/money.js";
 import { removeFromCart, updateDeliveryOption } from "../../data/cart.js";
 
@@ -16,11 +16,11 @@ export function renderOrderSummary() {
 
         const productId = cartItem.productId;
         const matchingProduct = getProdcut(productId);
-       
+
 
         const deliveryOptionId = cartItem.deliveryOptionId;
         const deliveryOption = getDeliveryOption(deliveryOptionId);
-       
+
 
         const today = dayjs();
         const deliveryDate = today.add(deliveryOption.deliveryDays, 'days');
@@ -99,11 +99,11 @@ export function renderOrderSummary() {
                     </div>
                     </div>
 
-                `   
+                `
         })
         return html;
     }
-    
+
     document.querySelector(".js-order-summary").innerHTML = cartSummaryHTML;
 
     document.querySelectorAll(".js-delete-link")
