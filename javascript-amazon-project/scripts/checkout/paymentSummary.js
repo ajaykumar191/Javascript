@@ -3,8 +3,8 @@ import { getProdcut } from "../../data/products.js";
 import { getDeliveryOption } from "../../data/deliveryOptions.js";
 import { formatCurrency } from "../utils/money.js"
 
-//scripts\utils\money.js
 export function renderPaymentSummary() {
+
     let totalCartCount = 0;
     let productsPriceCents = 0;
     let shippingPriceCents = 0;
@@ -13,7 +13,7 @@ export function renderPaymentSummary() {
         const product = getProdcut(cartItem.productId);
         productsPriceCents += product.priceCents * cartItem.quantity;
         const deliveryOption = getDeliveryOption(cartItem.deliveryOptionId);
-        console.log(deliveryOption);
+
 
         shippingPriceCents += deliveryOption.priceCents;
 
