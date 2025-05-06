@@ -7,10 +7,8 @@ import { deliveryOptions } from '../../data/deliveryOptions.js';
 import { getProdcut } from "../../data/products.js";
 import { getDeliveryOption } from "../../data/deliveryOptions.js";
 import { renderPaymentSummary } from "./paymentSummary.js";
+
 export function renderOrderSummary() {
-
-
-
     let cartSummaryHTML = '';
     cart.forEach((cartItem) => {
 
