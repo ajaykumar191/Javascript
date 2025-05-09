@@ -41,7 +41,6 @@ class Clothing extends Product {
   constructor(productDetails) {
     super(productDetails);
     this.sizeChartLink = productDetails.sizeChartLink;
-    console.log(this.sizeChartLink);
 
 
   }
@@ -90,6 +89,9 @@ const product1 = new Product({
     "apparel"
   ]
 });
+
+// const date = new Date();
+// console.log(date.toLocaleTimeString());
 
 
 export const products = [
@@ -758,4 +760,25 @@ export const products = [
     return new Product(productDetails);
 
   }
-})
+});
+
+
+// const object3 = {
+//   method: () => {
+//     console.log(this);
+
+//   }
+// }
+// object3.method()
+
+// const obj4 ={
+//   method:()=>{
+//     console.log(this);
+//     [1,2,3,4].forEach(()=>{
+//       console.log(this);
+      
+//     })
+//   },
+  
+// }
+// obj4.method();
